@@ -4,7 +4,7 @@ def get_connection():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="home@1234",
+        password="",
         database="GadgetHub"
     )
 
@@ -15,4 +15,5 @@ if __name__ == "__main__":
         print("Database connected")
         conn.close()
     except Exception as e:
+
         print("Database connected failed",e)
